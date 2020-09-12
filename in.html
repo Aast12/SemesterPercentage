@@ -18,20 +18,20 @@
 
 <script>
 function move() {
-    var elem = document.getElementById("myBar");   
-    var width = 1;
-    var id = setInterval(frame, 10);
+    let elem = document.getElementById("myBar");   
+    let width = 1;
+    let id = setInterval(frame, 10);
     function frame() {
-      var inicio = new Date("08/10/2020");
-      var hoy = new Date();
-      var final = new Date("11/25/2020");
-      var msAlDia = 1000*60*60*24;
-      var hoyAFinal =  Math.round((final.getTime() - hoy.getTime())/msAlDia);
-      var inicioAHoy = Math.round((hoy.getTime() - inicio.getTime())/msAlDia);
-      var porcentaje = Math.round(inicioAHoy / (inicioAHoy + hoyAFinal) * 100);
+      let inicio = new Date("08/10/2020");
+      let hoy = new Date();
+      let final = new Date("11/25/2020");
+      let msAlDia = 1000*60*60*24;
+      let hoyAFinal =  Math.round((final.getTime() - hoy.getTime())/msAlDia);
+      let inicioAHoy = Math.round((hoy.getTime() - inicio.getTime())/msAlDia);
+      let porcentaje = Math.round(inicioAHoy / (inicioAHoy + hoyAFinal) * 100);
       console.log(porcentaje);
   
-      var myDiv = document.getElementById("divId");
+      let myDiv = document.getElementById("divId");
   
       if (width >= porcentaje) {
         clearInterval(id);
@@ -46,7 +46,7 @@ function move() {
   }
 </script>
 <footer>
-    <p>Con amor por pcruiher08</p>
+    <!--<p>Con amor por pcruiher08</p>-->
 
   </footer>
 </body>
