@@ -16,35 +16,7 @@
   <button class="w3-button w3-blue" onclick="move()">Recalcula</button> 
 </div>
 
-<script>
-function move() {
-    let elem = document.getElementById("myBar");   
-    let width = 1;
-    let id = setInterval(frame, 10);
-    function frame() {
-      let inicio = new Date("08/10/2020");
-      let hoy = new Date();
-      let final = new Date("11/25/2020");
-      let msAlDia = 1000*60*60*24;
-      let hoyAFinal =  Math.round((final.getTime() - hoy.getTime())/msAlDia);
-      let inicioAHoy = Math.round((hoy.getTime() - inicio.getTime())/msAlDia);
-      let porcentaje = Math.round(inicioAHoy / (inicioAHoy + hoyAFinal) * 100);
-      //console.log(porcentaje);
-  
-      let myDiv = document.getElementById("divId");
-  
-      if (width >= porcentaje) {
-        clearInterval(id);
-      } else {
-        width++; 
-        elem.style.width = width + '%'; 
-        myDiv.innerHTML = width + '%'
-      }
-  
-  
-    }
-  }
-</script>
+<script src="./index.js"></script>
 <footer>
     <!--<p>Con amor por pcruiher08</p>-->
 

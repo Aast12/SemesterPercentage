@@ -10,7 +10,7 @@ function move() {
       var hoyAFinal =  Math.round((final.getTime() - hoy.getTime())/msAlDia);
       var inicioAHoy = Math.round((hoy.getTime() - inicio.getTime())/msAlDia);
       var porcentaje = Math.round(inicioAHoy / (inicioAHoy + hoyAFinal) * 100);
-      console.log(porcentaje);
+      //console.log(porcentaje);
   
       var myDiv = document.getElementById("divId");
   
